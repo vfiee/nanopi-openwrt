@@ -5,20 +5,30 @@ CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s=y
 CONFIG_TARGET_OPTIMIZATION="-O3 -pipe -march=armv8-a+crypto+crc -mcpu=cortex-a53+crypto+crc -mtune=cortex-a53"
 CONFIG_TARGET_ROOTFS_PARTSIZE=600
 
-
-CONFIG_PACKAGE_luci-app-adbyby-plus=y
+# Adbyby广告屏蔽大师
+#CONFIG_PACKAGE_luci-app-adbyby-plus=y
 CONFIG_PACKAGE_luci-app-ddnsto=y
+# Docker控制面板
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_DOCKER_OPTIONAL_FEATURES=y
 CONFIG_PACKAGE_luci-app-godproxy=y
+# Netdata实时监控
 CONFIG_PACKAGE_luci-app-netdata=y
+# 代理
 CONFIG_PACKAGE_luci-app-openclash=y
+# CPU性能优化调节
 CONFIG_PACKAGE_luci-app-cpufreq=y
-CONFIG_PACKAGE_luci-app-passwall=y
+# 另外一款代理软件
+#CONFIG_PACKAGE_luci-app-passwall=y
+# qBittorrent(不可用)
 CONFIG_PACKAGE_luci-app-qbittorrent=y
+# 路由器工作数据记录 
 CONFIG_PACKAGE_luci-app-statistics=y
+# BT软件Transmission
 CONFIG_PACKAGE_luci-app-transmission=y
+# 网易UU加速器
 CONFIG_PACKAGE_luci-app-uugamebooster=y
+# Argon主题配置
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
@@ -42,6 +52,5 @@ CONFIG_DRIVER_11AC_SUPPORT=y
 CONFIG_DRIVER_11N_SUPPORT=y
 CONFIG_DRIVER_11W_SUPPORT=y
 
+# OLED配置(仅限R2S某些金属壳)
 CONFIG_PACKAGE_luci-app-oled=y
-
-CONFIG_PACKAGE_luci-app-nps=y
